@@ -38,7 +38,7 @@ async function showQuickPick() {
       lastUsed: lastUsedTimes.get(p) || 0,
     }))
     .sort((a, b) => b.lastUsed - a.lastUsed);
-  
+
   const selected = await vscode.window.showQuickPick(items, {
     matchOnDescription: true,
   });

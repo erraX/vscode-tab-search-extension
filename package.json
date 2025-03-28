@@ -1,7 +1,12 @@
 {
   "name": "vscode-tab-search",
-  "displayName": "Tab Search",
+  "displayName": "Fuzzy Tab Search",
   "description": "Quick fuzzy search through open tabs",
+  "publisher": "erraX",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erraX/vscode-tab-search-extension"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.85.0"
@@ -9,6 +14,11 @@
   "categories": [
     "Other"
   ],
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
