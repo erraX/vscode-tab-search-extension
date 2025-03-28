@@ -1,0 +1,40 @@
+{
+  "name": "vscode-tab-search",
+  "displayName": "Tab Search",
+  "description": "Quick fuzzy search through open tabs",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.ttabSearch",
+        "title": "Tab Search: Switch Tab"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.ttabSearch",
+        "key": "ctrl+shift+\\",
+        "mac": "cmd+shift+\\"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "18.x",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2"
+  }
+}
